@@ -1,44 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>360 Video</title>
-    <meta name="description" content="360 Video — A-Frame">
-    <script src="./js/aframe-master.js"</script>
-    <script src="./js/play-on-click.js"></script>
-    <script src="./js/hide-on-play.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-        <!--
-        SOURCE
-        Author: Bitmovin
-        URL:    https://bitmovin.com/demos/vr-360
-        -->
-        <video id="video"
-               loop
-               crossorigin="anonymous"
-               playsinline webkit-playsinline
-               src="rtmp://rtmp.taxcq.com/live/stream">
-        </video>
-      </a-assets>
-      <a-videosphere
-        rotation="0 -90 0" src="#video"
-        play-on-click>
-      </a-videosphere>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <!-- Add your CSS files or links here -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#">Logo</a>
+            <ul>
+                <li><a href="#home">主页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#products">产品与服务</a></li>
+                <li><a href="#tech">技术支持</a></li>
+                <li><a href="#news">新闻与活动</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <a-camera>
-        <a-entity
-          position="0 0 -1.5"
-          text="align:center;
-                width:6;
-                wrapCount:100;
-                color: white;
-                value: Click or tap to start video"
-          hide-on-play="#video">
-        </a-entity>
-      </a-camera>
-    </a-scene>
-  </body>
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>公司宣传语或一句话简介</h1>
+        <p>公司详细介绍</p>
+        <a href="#about">了解更多</a>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>关于我们</h2>
+        <!-- Add content about the company, team, etc. -->
+    </section>
+
+    <!-- Products & Services -->
+    <section id="products">
+        <h2>产品与服务</h2>
+        <!-- Add content about the products and services -->
+    </section>
+
+    <!-- Technical Support -->
+    <section id="tech">
+        <h2>技术支持</h2>
+        <!-- Add content about technical support -->
+    </section>
+
+    <!-- News & Events -->
+    <section id="news">
+        <h2>新闻与活动</h2>
+        <!-- Add content about news and events -->
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2>联系我们</h2>
+        <!-- Add contact form and contact information -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2023 Company Name. All rights reserved.</p>
+        <p><a href="#">隐私政策</a> | <a href="#">使用条款</a></p>
+        <!-- Add social media links if available -->
+    </footer>
+</body>
 </html>
