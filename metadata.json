@@ -1,0 +1,8 @@
+{
+  "name": "Audlis",
+  "id": "io.audlis.app",
+  "description": "The premier acoustic intelligence engine for iOS, Android, PC, and Web. Audlis transforms global voice streams into structured knowledge assets.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
